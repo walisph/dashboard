@@ -1,0 +1,23 @@
+{
+    "name": "walisph/dashboard",
+    "description": "",
+    "authors": [
+        {
+            "name": "Walis Philippines",
+            "email": "info@walis.com.ph"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Walisph\\Dashboard\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
