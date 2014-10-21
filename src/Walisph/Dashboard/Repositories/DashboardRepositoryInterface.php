@@ -2,8 +2,9 @@
 
 interface DashboardRepositoryInterface {
 
-    public function getFilesystem();
-    public function getConfig();
+	public function getFilesystem();
+
+	public function getConfig();
 
 }
  

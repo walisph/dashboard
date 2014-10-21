@@ -2,6 +2,7 @@
 
 interface UploadRepositoryInterface {
 
-    public function getImage(); // an alias
+	public function getImage(); // an alias
+
 }
  
