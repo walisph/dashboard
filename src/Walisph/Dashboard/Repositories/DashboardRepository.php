@@ -5,30 +5,31 @@ use Illuminate\Filesystem\Filesystem;
 
 class DashboardRepository implements DashboardRepositoryInterface {
 
-    /**
-     * @var Filesystem
-     */
-    public $filesystem;
+	/**
+	 * @var Filesystem
+	 */
+	public $file;
 
-    /**
-     * @var Repository
-     */
-    public $config;
+	/**
+	 * @var Repository
+	 */
+	public $config;
 
-    public function __construct( Filesystem $filesystem, Repository $config )
-    {
-        $this->filesystem = $filesystem;
-        $this->config = $config;
-    }
+	public function __construct( Filesystem $filesystem, Repository $config )
+	{
+		$this->file     = $filesystem;
+		$this->config   = $config;
+	}
 
-    public function getFilesystem()
-    {
-        return $this->filesystem;
-    }
+	public function getFilesystem()
+	{
+		return $this->file;
+	}
 
-    public function getConfig()
-    {
-        return $this->config;
-    }
+	public function getConfig()
+	{
+		return $this->config;
+	}
+
 }
  
