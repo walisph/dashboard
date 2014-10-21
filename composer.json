@@ -1,5 +1,6 @@
 {
     "name": "walisph/dashboard",
+    "type": "walisph-module",
     "description": "",
     "authors": [
         {
@@ -9,7 +10,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "illuminate/support": "4.2.*",
+        "illuminate/filesystem": "4.2.*"
     },
     "autoload": {
         "classmap": [
@@ -19,5 +21,5 @@
             "Walisph\\Dashboard\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
