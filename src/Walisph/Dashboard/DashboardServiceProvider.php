@@ -1,6 +1,7 @@
 <?php namespace Walisph\Dashboard;
 
 use Illuminate\Support\ServiceProvider;
+use Walisph\Dashboard\Repositories\DashboardRepository;
 
 class DashboardServiceProvider extends ServiceProvider {
 
@@ -18,7 +19,7 @@ class DashboardServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('walisph/dashboard');
+		$this->package('walisph/dashboard', 'walis-dashboard');
 	}
 
 	/**
@@ -28,7 +29,9 @@ class DashboardServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app->bind('\Walisph\Dashboard\Repositories\DashboardRepositoryInterface', function( $app ){
+			return new DashboardRepository( $app['file'], $app['config'] );
+		});
 	}
 
 	/**
