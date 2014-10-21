@@ -1,7 +1,7 @@
 {
     "name": "walisph/dashboard",
     "type": "walisph-module",
-    "description": "",
+    "description": "Dashboard Module for Walis Apps",
     "authors": [
         {
             "name": "Walis Philippines",
@@ -11,7 +11,9 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "4.2.*",
-        "illuminate/filesystem": "4.2.*"
+        "illuminate/filesystem": "4.2.*",
+        "intervention/image": "2.*",
+        "intervention/imagecache": "2.*"
     },
     "autoload": {
         "classmap": [
