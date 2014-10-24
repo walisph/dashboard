@@ -2,6 +2,7 @@
     "name": "walisph/dashboard",
     "type": "walisph-module",
     "description": "Dashboard Module for Walis Apps",
+    "license": "MIT",
     "authors": [
         {
             "name": "Walis Philippines",
